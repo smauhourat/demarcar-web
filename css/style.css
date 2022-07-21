@@ -10,6 +10,20 @@
 *
 */
 /* =================================== */
+/*	Global Style 
+/* =================================== */
+
+:root {
+  /* --primary-color: #0aa6bd; */
+  --primary-color: #e00053;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}  
+
+
+/* =================================== */
 /*	Basic Style 
 /* =================================== */
 body {
@@ -396,11 +410,11 @@ main > section {
 
 /*Slider Arrow Buttons*/
 #nav-arrows > a {
-  border: 1px solid #fff;
+  border: 1px solid rgba(143, 141, 141, 0.623);
   color: #fff;
   display: block;
   height: 60px;
-  line-height: 76px;
+  line-height: 76px;  
   position: absolute;
   text-align: center;
   top: 50%;
@@ -434,6 +448,7 @@ main > section {
 #nav-arrows > a.sl-next:hover,
 #nav-arrows > a.sl-prev:hover {
   background-color: #0aa6bd;
+  /* background-color: var(--primary-color);; */
   border-color: #0aa6bd;
   color: #fff;
 }

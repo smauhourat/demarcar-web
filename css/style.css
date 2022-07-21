@@ -529,6 +529,14 @@ main > section {
 /*=================================================================
     Feature
 ==================================================================*/
+#feature {
+  background-image: url(../images/bike-path-3881171_1920.jpg);
+  /*padding: 0;*/
+  color: #fff;
+  position: relative;
+ 
+}
+
 .list-nav {
   padding: 0;
   margin-top: 20px;

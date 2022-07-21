@@ -308,7 +308,8 @@ main > section {
 }
 
 .mask-overly {
-  background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+  /* background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0; */
+  background: rgba(2, 2, 2, 0.6) none repeat scroll 0 0;
   bottom: 0;
   left: 0;
   position: absolute;
@@ -379,7 +380,7 @@ main > section {
 
 .caption-content h2 {
   color: #fff;
-  font-size: 50px;
+  font-size: 120px;
   font-weight: 900;
   margin-bottom: 25px;
 }
@@ -388,7 +389,7 @@ main > section {
   display: block;
   font-size: 16px;
   margin-bottom: 45px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   margin-bottom: 65px;
   font-weight: 200;
 }
@@ -531,10 +532,14 @@ main > section {
 ==================================================================*/
 #feature {
   background-image: url(../images/bike-path-3881171_1920.jpg);
-  /*padding: 0;*/
+  padding: 0;
   color: #fff;
   position: relative;
- 
+}
+
+#feature .overlay {
+  background: url("../images/slide_bg.png") repeat scroll 0 0 transparent;
+  padding: 100px 0 120px;
 }
 
 .list-nav {
@@ -1512,3 +1517,9 @@ textarea.form-control {
   font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.slider-svg {
+  right: 0;
+  position: absolute;
+}

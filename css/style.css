@@ -1291,7 +1291,8 @@ textarea.form-control {
     font-size: 40px;
   }
   .caption-content p {
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 18px;
   }
   .caption-content strong {
     font-size: 45px;

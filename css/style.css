@@ -950,10 +950,18 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div > span {
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: 700;
-  margin: 40px 0 30px;
+  /* margin: 40px 0 30px; */
+  margin: 30px 0 0px;
   text-transform: uppercase;
+}
+
+.testimonial-item > div > h3 {
+  font-weight: 700;
+  margin: 0px 0 30px;
+  font-size: 14px;
+  color: #fff;
 }
 
 #testimonials .owl-buttons {

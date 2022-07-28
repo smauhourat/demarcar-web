@@ -221,15 +221,16 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="card p-3">
+							<div class="card p-3 mb-2">
 								<h4>Estudio Preliminar</h4>
 								<p>Investigamos y comprendemos los requerimientos del cliente, las condiciones y/o
 									contexto, los procesos internos y utilizacion de las instalaciones. </p>
 								<!-- <ul class="list-nav">
-									<li><i class="ion-ios-checkmark-empty"></i>Norman Copenhagen focuses on challenging</li>
-									<li><i class="ion-ios-checkmark-empty"></i>The challenge was melting</li>
-									<li><i class="ion-ios-checkmark-empty"></i>We thought air purifier</li>
-									<li><i class="ion-ios-checkmark-empty"></i>Front face is coated with fabric for a familia
+									<li><i class="ion-ios-checkmark-empty"></i>Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Provident, eum.</li>
+									<li><i class="ion-ios-checkmark-empty"></i>Lorem, ipsum.</li>
+									<li><i class="ion-ios-checkmark-empty"></i>Lorem ipsum dolor sit.</li>
+									<li><i class="ion-ios-checkmark-empty"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 									</li>
 									<li><i class="ion-ios-checkmark-empty"></i>Developing Belyse, I thought the strong
 										characters</li>
@@ -237,7 +238,7 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="card p-3">
+							<div class="card p-3 mb-2">
 								<h4>Oferta Técnica</h4>
 								<p>Realizamos propuestas detalladas que minimizan los riesgos, reduciendo costos de
 									mantenimiento posteriores.<br>&nbsp</p>
@@ -253,7 +254,7 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<div class="card p-3">
+							<div class="card p-3 mb-2">
 								<h4>Equipo Profesional</h4>
 								<p>Contamos con personal altamente calificado, en constante capacitacion en nuevas
 									tecnicas y/o productos en el mercado.<br>&nbsp</p>
@@ -751,20 +752,16 @@
 					<div class="col-md-7 contact-form">
 						<form id="contact-form" action="#" method="post">
 							<div class="input-field">
-								<input type="text" name="name" class="form-control" placeholder="Nombre..."
-									value="Santiago">
+								<input type="text" name="name" class="form-control" placeholder="Nombre...">
 							</div>
 							<div class="input-field">
-								<input type="email" name="email" class="form-control" placeholder="Email..."
-									value="santiago@hotmail.com">
+								<input type="email" name="email" class="form-control" placeholder="Email...">
 							</div>
 							<div class="input-field">
-								<input type="text" name="subject" class="form-control" placeholder="Asunto..."
-									value="asuntito">
+								<input type="text" name="subject" class="form-control" placeholder="Asunto...">
 							</div>
 							<div class="input-field">
-								<textarea name="message" class="form-control" placeholder="Mensaje..."
-									value=" asd asd adasd asdad"></textarea>
+								<textarea name="message" class="form-control" placeholder="Mensaje..."></textarea>
 							</div>
 							<div id="mail-success" class="success-ms">
 								Gracias, a la brevedad nos comunicaremos.
@@ -825,14 +822,21 @@
 				<div class="col-md-4">
 					<h4>Comunicaciones</h4>
 					<p>Si desea recibir noticias sobre nuevos productos o servicios, ingrese aquí su email</p>
-					<form action="#" method="post" class="subscribe-form wow animated fadeInUp">
+					<form id="news-form" action="#" method="post" class="subscribe-form wow animated fadeInUp">
 						<div class="input-field">
-							<input type="email" class="subscribe form-control" placeholder="Ingrese su email...">
-							<button type="submit" class="submit-icon">
+							<input name="email_news" type="email" class="subscribe form-control"
+								placeholder="Ingrese su email...">
+							<button type="submit" class="submit-icon" id="submit_news">
 								<i class="fa fa-paper-plane fa-lg"></i>
 							</button>
 						</div>
 					</form>
+					<div id="suscription-success" class="success-suscription">
+						Gracias, su mail ha quedado registrado.
+					</div>
+					<div id="suscription-fail" class="error-suscription">
+						Disculpe, ha ocurrido un error, por favor intente mas tarde.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -925,18 +929,24 @@
 					$(form).ajaxSubmit({
 						type: "POST",
 						data: $(form).serialize(),
-						url: "http://demarcar.com.ar/demo/mail.php",
+						url: "mail.php",
 						success: function (data) {
 							console.log('done: ' + data);
 							$(".contact-form").fadeTo("slow", 1, function () {
 								$(".contact-form").resetForm();
 								$(".success-ms").slideDown("slow");
+								setTimeout(() => {
+									$(".success-ms").slideUp("slow");
+								}, 2000);
 							});
 						},
 						error: function (err) {
 							console.log('error: ' + err);
 							$(".contact-form").fadeTo("slow", 1, function () {
 								$(".error-ms").slideDown("slow");
+								setTimeout(() => {
+									$(".error-ms").slideUp("slow");
+								}, 2000);
 							});
 						}
 					});
@@ -946,6 +956,42 @@
 					element.after(error);
 					error.hide().slideDown();
 				}
+			});
+
+			$("#news-form").validate({
+				rules: {
+					email_news: {
+						required: true,
+						email: true
+					}
+				},
+				messages: {
+					email: {
+						required: "Campo requerido"
+					}
+				},
+				submitHandler: function (form) {
+					$(form).ajaxSubmit({
+						type: "POST",
+						data: $(form).serialize(),
+						url: "news.php",
+						success: function (data) {
+							console.log('done: ' + data);
+							$(".success-suscription").slideDown("slow");
+							setTimeout(() => {
+								$(".success-suscription").slideUp("slow");
+							}, 2000);
+						},
+						error: function (err) {
+							console.log('error: ' + JSON.stringify(err));
+							$(".error-suscription").slideDown("slow");
+							setTimeout(() => {
+								$(".error-suscription").slideUp("slow");
+							}, 2000);
+						}
+					});
+				},
+
 			});
 		});
 	</script>

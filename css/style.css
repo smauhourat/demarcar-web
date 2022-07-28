@@ -1575,3 +1575,27 @@ textarea.form-control {
     font-size: 80px;
   }
 }
+
+
+/*============================================================
+============================================================*/
+
+.success-suscription {
+  background-color: #6cb670;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+  font-size: 13px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.error-suscription {
+  display: none;
+  padding: 10px;
+  color: #d8000c;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #ffbaba;
+  margin-bottom: 10px;
+}

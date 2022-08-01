@@ -336,16 +336,16 @@ main > section {
 
 .slider-1 {
   /* background-image: url(../images/slider/slider-1.jpg); */
-  background-image: url(../images/slider/slider-11.jpg);
+  background-image: url(../images/slider/slider-11.webp);
 }
 
 .slider-2 {
   /* background-image: url(../images/slider/slider-2.jpg); */
-  background-image: url(../images/slider/slider-22.jpg);
+  background-image: url(../images/slider/slider-22.webp);
 }
 
 .slider-3 {
-  background-image: url(../images/slider/slider-3.jpg);
+  background-image: url(../images/slider/slider-3.webp);
 }
 
 .sl-slider-wrapper {
@@ -539,7 +539,7 @@ main > section {
 }
 
 .about-us-bg {
-  background: transparent url("../images/bike-path-3881171_1920.jpg") no-repeat scroll center center/cover;
+  background: transparent url("../images/bike-path-3881171_1920.webp") no-repeat scroll center center/cover;
   color: #fff;
   position: relative;
   text-align: center;
@@ -550,7 +550,7 @@ main > section {
     Feature
 ==================================================================*/
 #feature {
-  background-image: url(../images/bike-path-3881171_1920.jpg);
+  background-image: url(../images/bike-path-3881171_1920.webp);
   padding: 0;
   color: #fff;
   position: relative;
@@ -651,7 +651,7 @@ main > section {
     Video Section
 ==================================================================*/
 .video-bg {
-  background: transparent url("../images/video-bg.jpg") no-repeat scroll center center/cover;
+  background: transparent url("../images/video-bg.webp") no-repeat scroll center center/cover;
   color: #fff;
   position: relative;
   text-align: center;
@@ -890,7 +890,7 @@ ul.external li a:hover {
 	Testimonials
 ==================================================================*/
 #testimonials {
-  background-image: url(../images/parallax/testimonial.jpg);
+  background-image: url(../images/parallax/testimonial.webp);
   /*padding: 0;*/
   color: #fff;
   position: relative;
@@ -1070,7 +1070,7 @@ ul.external li a:hover {
 	Price
 ==================================================================*/
 #social {
-  background-image: url(../images/parallax/testimonial.jpg);
+  background-image: url(../images/parallax/testimonial.webp);
   padding: 0;
 }
 

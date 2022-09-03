@@ -12,10 +12,12 @@
 /* =================================== */
 /*	Global Style 
 /* =================================== */
-
+/*--primary-color: #e00053;*/
+/*--primary-color-rgba: rgba(224, 0, 83, 0.75);*/
+/*--primary-color: #ffdb0a;*/
 :root {
-  --primary-color: #e00053;
-  --primary-color-rgba: rgba(224, 0, 83, 0.75);
+  --primary-color: #fab012;
+  --primary-color-rgba: rgba(250, 176, 18, 0.75);
   --primary-soft-color-rgba:rgba(211, 165, 182, 0.75);
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -525,14 +527,14 @@ main > section {
 }
 
 .fancybox-next span {
-  background: url("../images/right.png") no-repeat scroll center center #e00053;
+  background: url("../images/right.png") no-repeat scroll center center #fab012;
   height: 40px;
   width: 40px;
   right: 0;
 }
 
 .fancybox-prev span {
-  background: url("../images/left.png") no-repeat scroll center center #e00053;
+  background: url("../images/left.png") no-repeat scroll center center #fab012;
   height: 40px;
   width: 40px;
   left: 0;
@@ -566,7 +568,8 @@ main > section {
 }
 
 #feature .card {
-  background-color: rgba(224, 0, 83, 0.45);
+  /* background-color: rgba(224, 0, 83, 0.45); */
+  background-color: rgba(250, 176, 18, 0.55);
 }
 
 .list-nav {

@@ -86,7 +86,7 @@ main > section {
 .btn {
   border-radius: 0;
   /* border: 0; */
-  border: 1px solid #ccc
+  border: 1px solid #ccc;
   position: relative;
   text-transform: uppercase;
 }

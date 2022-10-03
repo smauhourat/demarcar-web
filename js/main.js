@@ -133,6 +133,36 @@ $(document).ready(function () {
         }
     });
 
+    jQuery('#masinfo').singlePageNav({
+        offset: jQuery('#masinfo').outerHeight(),
+        filter: ':not(.external)',
+        speed: 2000,
+        currentClass: 'current',
+        easing: 'easeInOutExpo',
+        updateHash: true,
+        beforeStart: function () {
+            console.log('begin scrolling XX');
+        },
+        onComplete: function () {
+            console.log('done scrolling XX');
+        }
+    });    
+
+    jQuery('#footermenu').singlePageNav({
+        offset: jQuery('#footermenu').outerHeight(),
+        filter: ':not(.external)',
+        speed: 2000,
+        currentClass: 'current',
+        easing: 'easeInOutExpo',
+        updateHash: true,
+        beforeStart: function () {
+            console.log('begin scrolling XX');
+        },
+        onComplete: function () {
+            console.log('done scrolling XX');
+        }
+    });    
+
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400) {
             $('.navbar-brand a').css('color', '#fff');

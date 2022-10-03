@@ -61,6 +61,7 @@
 
 	<!-- Modernizer Script for old Browsers -->
 	<script src="plugins/modernizr-2.6.2.min.js"></script>
+	<!-- <script src="plugins/smoothScroll-ES5.js"></script> -->
 
 </head>
 
@@ -142,7 +143,9 @@
 									</h2>
 									<p class="animated fadeInDown">Con pinturas termoplásticas y acrílicas. La forma más
 										duradera para demarcar rutas, caminos y/o pisos industriales.</p>
-									<a href="#" class="btn btn-blue btn-effect">Mas Informacion</a>
+									<div id="masinfo">
+										<a href="#feature" class="btn btn-blue btn-effect">Mas Informacion</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -159,7 +162,9 @@
 								<p class="animated fadeInDown">Con amplia experiencia principalmente en pisos de
 									hormigon
 								</p>
-								<a href="#" class="btn btn-blue btn-effect">Mas Informacion</a>
+								<div id="masinfo">
+									<a href="#feature" class="btn btn-blue btn-effect">Mas Informacion</a>
+								</div>
 							</div>
 						</div>
 
@@ -175,7 +180,9 @@
 								<p class="animated fadeInDown">
 									<img src="images/logo-blanco-dino-power.webp" height="120px">
 								</p>
-								<a href="#" class="btn btn-blue btn-effect">Mas Informacion</a>
+								<div id="masinfo">
+									<a href="#feature" class="btn btn-blue btn-effect">Mas Informacion</a>
+								</div>
 							</div>
 						</div>
 
@@ -325,7 +332,7 @@
 								<i class="ion-paintbucket"></i>
 							</div>
 							<h3>Demarcacion Horizontal</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+							<p>Somos especialistas en trabajos de demarcación vial horizontal, utilizando las mejores técnicas de aplicación.</p>
 						</div>
 					</div>
 
@@ -336,7 +343,7 @@
 								<!-- <i class="ion-ios-checkmark-outline"></i> -->
 							</div>
 							<h3>Pulido de Pisos</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+							<p>Realizamos el proceso completo de recuperacion/acabado de pisos industriales, pulido e impermeabilización.</p>
 						</div>
 					</div>
 
@@ -346,7 +353,7 @@
 								<i class="ion-ios-compose"></i>
 							</div>
 							<h3>Venta Equipos</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+							<p>Somos representantes en Argentina de Dino-Power, compañia China lider en fabricacion de maquinas herramientas para la aplicación de pinturas especiales.</p>
 						</div>
 					</div>
 
@@ -356,7 +363,7 @@
 								<i class="ion-ios-paperplane"></i>
 							</div>
 							<h3>Servicio Post-Venta</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+							<p>Nuestro servicio de post-venta abarca desde los insumos a las herramientas comercializadas, haciendo siempre hincapie en la satisfacción del Cliente.</p>
 						</div>
 					</div>
 
@@ -366,7 +373,7 @@
 								<i class="ion-person-stalker"></i>
 							</div>
 							<h3>Capacitacion de Personal</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+							<p>Contamos con especialistas que brindan capacitaciones a los aplicadores que realizen las obras.</p>
 						</div>
 					</div>
 
@@ -376,7 +383,7 @@
 								<i class="ion-ios-checkmark"></i>
 							</div>
 							<h3>Pinturas e Insumos</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+							<p>Comercializamos todo tipo de pinturas industriales e insumos relacionados, recubrimientos acrilicos, pinturas termoplasticas, diluyentes, etc. </p>
 						</div>
 					</div>
 
@@ -727,7 +734,7 @@
 
 						<div class="col-lg-12">
 							<ul class="social-button">
-								<li class="wow animated zoomIn"><a href="http://www.fb.com/demarcar"><i
+								<li class="wow animated zoomIn"><a href="http://www.facebook.com/#"><i
 											class="ion-social-facebook"></i></a></li>
 								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i
 											class="ion-social-twitter"></i></a></li>
@@ -817,8 +824,8 @@
 				</div>
 				<div class="col-md-4">
 					<h4>Empresa</h4>
-					<ul>
-						<li><a href="#">Home</a></li>
+					<ul id="footermenu">
+						<li><a href="#body">Home</a></li>
 						<li><a href="#service">Servicios</a></li>
 						<li><a href="#portfolio">Productos</a></li>
 						<li><a href="#">Terminos y Condiciones</a></li>

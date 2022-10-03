@@ -47,7 +47,7 @@ iframe {
 }
 
 a {
-  color: var(--primary-color);
+  color: #fab012;
   transition: all 0.3s ease-out 0s;
 }
 
@@ -85,14 +85,14 @@ main > section {
 
 .btn {
   border-radius: 0;
-  border: 0;
+  /* border: 0; */
+  border: 1px solid #ccc
   position: relative;
   text-transform: uppercase;
 }
 
 .btn-blue {
-  /* background-color: rgba(10, 166, 189, 0.75); */
-  background-color: var(--primary-color-rgba);
+  background-color:rgba(250, 176, 18, 0.75);
   box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
   padding: 15px 55px;
   color: #fff;
@@ -105,7 +105,7 @@ main > section {
 }
 
 .bg-blue {
-  background-color: var(--primary-color);
+  background-color: #fab012;
 }
 
 /* Sweep To Right */
@@ -130,7 +130,7 @@ main > section {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: #fff; */
+  background: #fff;
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition-property: transform;
@@ -141,8 +141,7 @@ main > section {
 .btn-effect:hover,
 .btn-effect:focus,
 .btn-effect:active {
-  /* color: rgb(9, 157, 178); */
-  color: var(--primary-color);
+  color: rgb(250, 176, 18);
 }
 
 .btn-effect:hover:before,
@@ -160,7 +159,7 @@ main > section {
 }
 
 .section-title h2 {
-  color: var(--primary-color);
+  color: #fab012;
   font-size: 24px;
   font-weight: 700;
   line-height: 20px;
@@ -307,7 +306,7 @@ main > section {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--primary-color);
+  background-color: #fab012;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -453,9 +452,9 @@ main > section {
 
 #nav-arrows > a.sl-next:hover,
 #nav-arrows > a.sl-prev:hover {
-  background-color: var(--primary-color);
-  /* background-color: var(--primary-color);; */
-  border-color: var(--primary-color);
+  background-color: #fab012;
+  /* background-color: #fab012;; */
+  border-color: #fab012;
   color: #fff;
 }
 
@@ -633,7 +632,7 @@ main > section {
 
 .service-icon i {
   font-size: 60px;
-  color: var(--primary-color);
+  color: #fab012;
 }
 
 .service-item h3 {
@@ -689,7 +688,7 @@ main > section {
 }
 
 .video-popup-button {
-  background-color: var(--primary-color);
+  background-color: #fab012;
   border-radius: 50%;
   color: #fff;
   display: inline-block;
@@ -767,7 +766,7 @@ main > section {
 }
 
 .portfolio-filter li a.active {
-  color: var(--primary-color);
+  color: #fab012;
 }
 
 .portfolio-filter li a::after {
@@ -859,7 +858,7 @@ ul.external li a {
 }
 
 ul.external li a:hover {
-  background-color: var(--primary-color);
+  background-color: #fab012;
   color: #fff;
 }
 
@@ -903,6 +902,7 @@ ul.external li a:hover {
 #testimonials:before {
   /* background-color: rgba(10, 166, 189, 0.75); */
   background-color: var(--primary-soft-color-rgba);
+  /* background-color: rgba(250, 176, 18, 0.75); */
   padding: 70px 0 40px;
   position: absolute;
   top: 0;
@@ -1018,7 +1018,7 @@ ul.external li a:hover {
 }
 
 .price-table.featured .value {
-  background-color: var(--primary-color);
+  background-color: #fab012;
   color: #fff;
 }
 
@@ -1062,7 +1062,7 @@ ul.external li a:hover {
 
 .price-table.featured ul li:last-child,
 .price-table ul li:last-child:hover {
-  background-color: var(--primary-color);
+  background-color: #fab012;
 }
 
 .price-table.featured ul li:last-child a,
@@ -1110,9 +1110,9 @@ ul.external li a:hover {
 
 .social-button li a:hover {
   /* border: 2px solid #0aa6bd; */
-  border: 2px solid var(--primary-color);
+  border: 2px solid #fab012;
   /* background: #0aa6bd; */
-  background: var(--primary-color);
+  background: #fab012;
   color: #fff;
 }
 
@@ -1134,7 +1134,7 @@ ul.external li a:hover {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: var(--primary-color);
+  border-color: #fab012;
 }
 
 textarea.form-control {
@@ -1149,7 +1149,7 @@ textarea.form-control {
   font-weight: 400;
 }
 
-#submit:hover {
+/* #submit:hover {
   color: #fff;
 }
 
@@ -1159,7 +1159,7 @@ textarea.form-control {
 
 #submit.btn-effect:after {
   background: #2e2e2e;
-}
+} */
 
 .contact-details h3 {
   border-bottom: 1px solid #dedede;
@@ -1284,7 +1284,7 @@ textarea.form-control {
 }
 
 .footer-social ul li a:hover {
-  color: var(--primary-color);
+  color: #fab012;
 }
 
 .footer-content > p {
@@ -1542,7 +1542,7 @@ textarea.form-control {
 
 #footer ul li a:hover {
   /* color: rgb(9, 157, 178); */
-  color: var(--primary-color);
+  color: #fab012;
 }
 
 #footer h4 {

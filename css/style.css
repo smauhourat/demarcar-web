@@ -130,7 +130,7 @@ main > section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #fff;
+  /* background: #fff; */
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition-property: transform;
@@ -646,8 +646,9 @@ main > section {
 }
 
 .service-item p {
-  color: #7e848e;
-  font-weight: 200;
+  /* color: #7e848e; */
+  color: #444;
+  font-weight: 400;
 }
 
 /*=================================================================

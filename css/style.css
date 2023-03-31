@@ -218,7 +218,7 @@ main > section {
 
 /*Battery*/
 .loder-box {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(243, 172, 19, 0.02);
   border-radius: 1px;
   height: 100px;
   left: 50%;
@@ -233,7 +233,7 @@ main > section {
   width: 60px;
   height: 25px;
   top: 35%;
-  border: 1px #2e2e2e solid;
+  border: 1px #d6970d solid;
   border-radius: 2px;
   position: relative;
   -webkit-animation: charge 5s linear infinite;
@@ -242,7 +242,7 @@ main > section {
 }
 
 .battery:after {
-  background-color: #2e2e2e;
+  background-color: #fab012;
   border-radius: 0 1px 1px 0;
   content: "";
   height: 10px;
@@ -254,18 +254,18 @@ main > section {
 
 @-webkit-keyframes charge {
   0% {
-    box-shadow: inset 0px 0px 0px #2e2e2e;
+    box-shadow: inset 0px 0px 0px #fab012;
   }
   100% {
-    box-shadow: inset 60px 0px 0px #2e2e2e;
+    box-shadow: inset 60px 0px 0px #fab012;
   }
 }
 @keyframes charge {
   0% {
-    box-shadow: inset 0px 0px 0px #2e2e2e;
+    box-shadow: inset 0px 0px 0px #fab012;
   }
   100% {
-    box-shadow: inset 60px 0px 0px #2e2e2e;
+    box-shadow: inset 60px 0px 0px #fab012;
   }
 }
 /**

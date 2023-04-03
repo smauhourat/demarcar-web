@@ -1,0 +1,23 @@
+{
+  "name": "demarcar-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cleancss": "purgecss -css ./plugins/*.min.css --content *.html --output ./dist/css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smauhourat/demarcar-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smauhourat/demarcar-web/issues"
+  },
+  "homepage": "https://github.com/smauhourat/demarcar-web#readme",
+  "devDependencies": {
+    "purgecss": "^5.0.0"
+  }
+}

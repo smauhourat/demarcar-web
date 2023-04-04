@@ -336,17 +336,17 @@ main > section {
 }
 
 .slider-1 {
-  /* background-image: url(../images/slider/slider-1.jpg); */
-  background-image: url(../images/slider/slider-11.webp);
+  /* background-image: url(../img/slider/slider-1.jpg); */
+  background-image: url(../img/slider/slider-11.webp);
 }
 
 .slider-2 {
-  /* background-image: url(../images/slider/slider-2.jpg); */
-  background-image: url(../images/slider/slider-22.webp);
+  /* background-image: url(../img/slider/slider-2.jpg); */
+  background-image: url(../img/slider/slider-22.webp);
 }
 
 .slider-3 {
-  background-image: url(../images/slider/slider-3.webp);
+  background-image: url(../img/slider/slider-3.webp);
 }
 
 .sl-slider-wrapper {
@@ -518,7 +518,7 @@ main > section {
 
 /* Project laughtbox setup */
 .fancybox-item.fancybox-close {
-  background: url("../images/icons/close.png") no-repeat scroll 0 0 transparent;
+  background: url("../img/icons/close.png") no-repeat scroll 0 0 transparent;
   height: 40px;
   right: 0;
   top: 0;
@@ -526,21 +526,21 @@ main > section {
 }
 
 .fancybox-next span {
-  background: url("../images/right.png") no-repeat scroll center center #fab012;
+  background: url("../img/right.png") no-repeat scroll center center #fab012;
   height: 40px;
   width: 40px;
   right: 0;
 }
 
 .fancybox-prev span {
-  background: url("../images/left.png") no-repeat scroll center center #fab012;
+  background: url("../img/left.png") no-repeat scroll center center #fab012;
   height: 40px;
   width: 40px;
   left: 0;
 }
 
 .about-us-bg {
-  background: transparent url("../images/bike-path-3881171_1920.webp") no-repeat scroll center center/cover;
+  background: transparent url("../img/bike-path-3881171_1920.webp") no-repeat scroll center center/cover;
   color: #fff;
   position: relative;
   text-align: center;
@@ -551,14 +551,14 @@ main > section {
     Feature
 ==================================================================*/
 #feature {
-  background-image: url(../images/bike-path-3881171_1920.webp);
+  background-image: url(../img/bike-path-3881171_1920.webp);
   padding: 0;
   color: #fff;
   position: relative;
 }
 
 #feature .overlay {
-  background: url("../images/slide_bg.png") repeat scroll 0 0 transparent;
+  background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
   padding: 100px 0 120px;
 }
 
@@ -664,7 +664,7 @@ main > section {
     Video Section
 ==================================================================*/
 .video-bg {
-  background: transparent url("../images/video-bg.webp") no-repeat scroll center center/cover;
+  background: transparent url("../img/video-bg.webp") no-repeat scroll center center/cover;
   color: #fff;
   position: relative;
   text-align: center;
@@ -903,7 +903,7 @@ ul.external li a:hover {
 	Testimonials
 ==================================================================*/
 #testimonials {
-  background-image: url(../images/parallax/testimonial.webp);
+  background-image: url(../img/parallax/testimonial.webp);
   /*padding: 0;*/
   color: #fff;
   position: relative;
@@ -942,7 +942,7 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div:before {
-  background-image: url("../images/icons/quotes.png");
+  background-image: url("../img/icons/quotes.png");
   background-repeat: no-repeat;
   bottom: 127px;
   height: 33px;
@@ -953,7 +953,7 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div:after {
-  background-image: url("../images/icons/quotes.png");
+  background-image: url("../img/icons/quotes.png");
   background-position: -58px 0;
   background-repeat: no-repeat;
   bottom: -50px;
@@ -1084,12 +1084,12 @@ ul.external li a:hover {
 	Price
 ==================================================================*/
 #social {
-  background-image: url(../images/parallax/testimonial.webp);
+  background-image: url(../img/parallax/testimonial.webp);
   padding: 0;
 }
 
 #social .overlay {
-  background: url("../images/slide_bg.png") repeat scroll 0 0 transparent;
+  background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
   padding: 100px 0 120px;
 }
 

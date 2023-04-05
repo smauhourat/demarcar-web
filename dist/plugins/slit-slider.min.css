@@ -1,4 +1,4 @@
-.sl-slide {
+.sl-slide, .sl-slides-wrapper, .sl-slide-inner {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -46,6 +46,18 @@
 
 .nav-arrows span:hover {
 	border-color: rgba(150,150,150,0.9);
+}
+
+.nav-arrows span.nav-arrow-prev {
+	left: 5%;
+	border-right: none;
+	border-top: none;
+}
+
+.nav-arrows span.nav-arrow-next {
+	right: 5%;
+	border-left: none;
+	border-bottom: none;
 }
 
 
@@ -112,6 +124,38 @@
 
 
 /* Animations for content elements */
+
+.sl-trans-elems .caption-content h2 {
+	-webkit-animation: moveUp 1s ease-in-out both;
+	-moz-animation: moveUp 1s ease-in-out both;
+	-o-animation: moveUp 1s ease-in-out both;
+	-ms-animation: moveUp 1s ease-in-out both;
+	animation: moveUp 1s ease-in-out both;
+}
+.sl-trans-elems .caption-content span,
+.sl-trans-elems .caption-content a {
+	-webkit-animation: fadeIn 0.5s linear 0.5s both;
+	-moz-animation: fadeIn 0.5s linear 0.5s both;
+	-o-animation: fadeIn 0.5s linear 0.5s both;
+	-ms-animation: fadeIn 0.5s linear 0.5s both;
+	animation: fadeIn 0.5s linear 0.5s both;
+}
+
+.sl-trans-back-elems .caption-content h2 {
+	-webkit-animation: fadeOut 1s ease-in-out both;
+	-moz-animation: fadeOut 1s ease-in-out both;
+	-o-animation: fadeOut 1s ease-in-out both;
+	-ms-animation: fadeOut 1s ease-in-out both;
+	animation: fadeOut 1s ease-in-out both;
+}
+.sl-trans-back-elems .caption-content span,,
+.sl-trans-back-elems .caption-content a {
+	-webkit-animation: fadeOut 1s linear both;
+	-moz-animation: fadeOut 1s linear both;
+	-o-animation: fadeOut 1s linear both;
+	-ms-animation: fadeOut 1s linear both;
+	animation: fadeOut 1s linear both;
+}
 
 @-webkit-keyframes moveUp{
 	0% {-webkit-transform: translateY(40px);}

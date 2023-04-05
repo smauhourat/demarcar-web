@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "cleandist": "rmdir /S /Q dist && mkdir dist",
-    "cleancss": "purgecss -css ./plugins/*.min.css --content *.html --output ./dist/css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "copyassets": "xcopy assets dist\\assets /s /e /q /y /i",
+    "copyplugins": "xcopy plugins dist\\plugins /s /e /q /y /i",
+    "cleancss": "purgecss -css ./plugins/*.min.css --content *.html --output ./dist/plugins/",
+    "build": "npm run cleandist && npm run copyassets && npm run copyplugins"
   },
   "repository": {
     "type": "git",

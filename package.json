@@ -6,9 +6,11 @@
   "scripts": {
     "cleandist": "rmdir /S /Q dist && mkdir dist",
     "copyassets": "xcopy assets dist\\assets /s /e /q /y /i",
-    "copyplugins": "xcopy plugins dist\\plugins /s /e /q /y /i",
+    "copyplugins": "xcopy plugins\\*.js dist\\plugins\\*.js /s /e /q /y /i",
+    "copyfonts": "xcopy fonts dist\\fonts /s /e /q /y /i",
+    "copyroot": "robocopy . .\\dist *.html *.pdf",
     "cleancss": "purgecss -css ./plugins/*.min.css --content *.html --output ./dist/plugins/",
-    "build": "npm run cleandist && npm run copyassets && npm run copyplugins"
+    "build": "npm run cleandist && npm run copyassets && npm run copyplugins && npm run copyfonts && npm run cleancss && npm run copyroot"
   },
   "repository": {
     "type": "git",

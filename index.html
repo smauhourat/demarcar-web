@@ -49,7 +49,7 @@
 	<!-- Fancybox.min -->
 	<link rel="stylesheet" href="plugins/jquery.fancybox.min.css">
 	<!-- bootstrap.min -->
-	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/bootstrap.min.css">
 	<!-- Carousel.min -->
 	<link rel="stylesheet" href="plugins/owl.carousel.min.css">
 	<!-- Slit-slider.min -->
@@ -893,7 +893,7 @@
 	<!-- Main jQuery -->
 	<script src="plugins/jquery-1.11.1.min.js"></script>
 	<!-- Twitter Bootstrap -->
-	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="plugins/bootstrap.min.js"></script>
 	<!-- Single Page Nav -->
 	<script src="plugins/jquery.singlePageNav.min.js"></script>
 	<!-- jquery.fancybox.pack -->
@@ -958,7 +958,7 @@
 					$(form).ajaxSubmit({
 						type: "POST",
 						data: $(form).serialize(),
-						url: "mail.php",
+						url: "assets/php/mail.php",
 						success: function (data) {
 							console.log('done: ' + data);
 							$(".contact-form").fadeTo("slow", 1, function () {
@@ -1003,7 +1003,7 @@
 					$(form).ajaxSubmit({
 						type: "POST",
 						data: $(form).serialize(),
-						url: "news.php",
+						url: "assets/php/news.php",
 						success: function (data) {
 							console.log('done: ' + data);
 							$(".success-suscription").slideDown("slow");

@@ -26,5 +26,8 @@
   "homepage": "https://github.com/smauhourat/demarcar-web#readme",
   "devDependencies": {
     "purgecss": "^5.0.0"
+  },
+  "dependencies": {
+    "lite-youtube-embed": "^0.2.0"
   }
 }

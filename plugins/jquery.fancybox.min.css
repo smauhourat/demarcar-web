@@ -1,4 +1,5 @@
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+/* purgecss start ignore */
 .fancybox-wrap,
 .fancybox-skin,
 .fancybox-outer,
@@ -272,3 +273,4 @@
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 }
+/* purgecss end ignore */

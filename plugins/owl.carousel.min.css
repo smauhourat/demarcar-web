@@ -4,6 +4,7 @@
  */
 
 /* clearfix */
+/* purgecss start ignore */
 .owl-carousel .owl-wrapper:after {
 	content: ".";
 	display: block;
@@ -126,6 +127,7 @@
   -moz-animation: scaleUpTo .5s ease both;
   animation: scaleUpTo .5s ease both;
 }
+/* purgecss end ignore */
 /* Keyframes */
 /*empty*/
 @-webkit-keyframes empty {

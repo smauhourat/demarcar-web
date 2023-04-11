@@ -336,16 +336,26 @@ main > section {
 }
 
 .slider-1 {
-  /* background-image: url(../img/slider/slider-1.jpg); */
-  background-image: url(../img/slider/slider-11.webp);
+  background-image: url(../img/slider/slider-1_low.webp);
+}
+
+.slider-1.lazyloaded {
+  background-image: url(../img/slider/slider-1.webp);
 }
 
 .slider-2 {
-  /* background-image: url(../img/slider/slider-2.jpg); */
-  background-image: url(../img/slider/slider-22.webp);
+  background-image: url(../img/slider/slider-2_low.webp);
+}
+
+.slider-2.lazyloaded {
+  background-image: url(../img/slider/slider-2.webp);
 }
 
 .slider-3 {
+  background-image: url(../img/slider/slider-3_low.webp);
+}
+
+.slider-3.lazyloaded {
   background-image: url(../img/slider/slider-3.webp);
 }
 

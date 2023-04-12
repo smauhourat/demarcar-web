@@ -40,18 +40,22 @@
 
 	<!-- CSS ================================================== -->
 
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&display=swap">
+	<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&display=swap"> -->
+	<link rel="preload" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&display=swap" as="style"
+		onload="this.onload=null;this.rel='stylesheet'">
 
 	<!-- Fontawesome Icon font -->
 	<link rel="stylesheet" href="plugins/font-awesome.min.css">
 	<!-- Ion Icons Font -->
-	<link rel="stylesheet" href="plugins/ionicons.min.css">
+	<!-- <link rel="stylesheet" href="plugins/ionicons.min.css"> -->
+	<link rel="preload" href="plugins/ionicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<!-- Fancybox.min -->
 	<link rel="stylesheet" href="plugins/jquery.fancybox.min.css">
 	<!-- bootstrap.min -->
 	<link rel="stylesheet" href="plugins/bootstrap.min.css">
 	<!-- Carousel.min -->
-	<link rel="stylesheet" href="plugins/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="plugins/owl.carousel.min.css"> -->
+	<link rel="preload" href="plugins/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<!-- Slit-slider.min -->
 	<link rel="stylesheet" href="plugins/slit-slider.min.css">
 	<!-- Animate.min -->
@@ -61,6 +65,7 @@
 
 	<!-- You Tube deferred -->
 	<link rel="stylesheet" href="plugins/lite-yt-embed.min.css" />
+	<!-- <link rel="preload" href="plugins/lite-yt-embed.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
 
 	<!-- Modernizer Script for old Browsers -->
 	<script src="plugins/modernizr-2.6.2.min.js"></script>
@@ -1031,8 +1036,8 @@
 			});
 		});
 	</script>
-	<script src="plugins/lite-yt-embed.js"></script>
-	<script src="plugins/ls.unveilhooks.min.js"></script>
+	<script src="plugins/lite-yt-embed.js" defer></script>
+	<script src="plugins/ls.unveilhooks.min.js" defer></script>
 
 </body>
 
